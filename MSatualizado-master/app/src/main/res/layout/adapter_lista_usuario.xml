@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:background="#151515"
+    android:layout_marginTop="10sp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+    android:background="#151515">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageFotoSeguidor"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/teste" />
+
+        <TextView
+            android:id="@+id/textNomeSeguidor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:text="Nome do usuário"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textColorHint="@color/common_google_signin_btn_text_dark_default" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/divisor" />
+
+</LinearLayout>

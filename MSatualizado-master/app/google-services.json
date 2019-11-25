@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "265062353210",
+    "firebase_url": "https://msoficial-51729.firebaseio.com",
+    "project_id": "msoficial-51729",
+    "storage_bucket": "msoficial-51729.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265062353210:android:e85a16a28f230b8a14a803",
+        "android_client_info": {
+          "package_name": "com.example.moviestudyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265062353210-5s85jt0aeib523e9t18rbdnsqtbus276.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moviestudyapp",
+            "certificate_hash": "00c3399b59bdaf22aad05ca6bf79d0575b3b27b0"
+          }
+        },
+        {
+          "client_id": "265062353210-ikl6bseoj44j3mepo3ju26u9quacpfnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlSFgFROxWxoHAyu2uSPpVD9NAlna0ApA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265062353210-ikl6bseoj44j3mepo3ju26u9quacpfnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

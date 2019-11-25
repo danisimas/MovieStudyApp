@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000"
+    tools:context=".FilmeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--dbd27d-->
+
+        <ImageView
+            android:id="@+id/imagem_filme"
+            android:layout_width="168dp"
+            android:layout_height="198dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_assistir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.609"
+            tools:src="@tools:sample/avatars[4]" />
+
+        <TextView
+            android:id="@+id/nome_filme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/crete_round"
+            android:text="Nome do filme"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.042" />
+
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="145dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="304dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginRight="145dp"
+            android:layout_marginBottom="7dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/btn_assistir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/genero_filme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Terror"
+                android:textColor="#a0a0a0"
+                app:layout_constraintBottom_toTopOf="@+id/btn_assistir"
+                app:layout_constraintEnd_toStartOf="@+id/data_filme"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/class_filme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Maiores de 14"
+                android:textColor="#DAA520"
+                app:layout_constraintBottom_toTopOf="@+id/btn_assistir"
+                app:layout_constraintEnd_toStartOf="@+id/disciplina_filme" />
+
+            <TextView
+                android:id="@+id/data_filme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="2019"
+                android:textColor="#a0a0a0"
+                app:layout_constraintBottom_toTopOf="@+id/btn_assistir"
+                app:layout_constraintEnd_toStartOf="@+id/class_filme" />
+
+            <TextView
+                android:id="@+id/disciplina_filme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Matemática"
+                android:textColor="#DAA520"
+                app:layout_constraintBottom_toTopOf="@+id/btn_assistir"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/direcao_filme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Direção"
+            android:textColor="#a0a0a0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.165"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_assistir" />
+
+
+        <Button
+            android:id="@+id/btn_fav"
+            android:layout_width="38dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="356dp"
+            android:background="@drawable/ic_favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.729"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/favoritos"
+            android:layout_width="58dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="32dp"
+            android:text="Favoritar"
+            android:textAlignment="center"
+            android:textColor="#a0a0a0"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.739"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_fav"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_assistir"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:background="@drawable/button_assistir"
+            android:text="Assistir"
+            android:textColor="#800000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.449" />
+
+        <TextView
+            android:id="@+id/sinopse_filme"
+            android:layout_width="372dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="456dp"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

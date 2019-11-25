@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".EditarPerfil">
+
+
+    <!--set the red text color-->
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/button_assistir"
+        android:text="Salvar"
+        android:textColor="#800000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bio1"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_profile"
+        android:layout_width="207dp"
+        android:layout_height="187dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/teste"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/galeria"
+        android:layout_width="220dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_assistir"
+        android:text="Selecionar Foto de Perfil"
+        android:textColor="#800000"
+        app:layout_constraintBottom_toTopOf="@+id/nome2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_profile"
+        app:layout_goneMarginBottom="18dp" />
+
+    <EditText
+        android:id="@+id/bio1"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="32dp"
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="Bio"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693" />
+
+    <EditText
+        android:id="@+id/nome2"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:backgroundTint="#fff"
+        android:textCursorDrawable="@drawable/cursor"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="381dp"
+        app:layout_constraintBottom_toTopOf="@+id/bio1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/galeria"
+        app:layout_constraintVertical_bias="0.993" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

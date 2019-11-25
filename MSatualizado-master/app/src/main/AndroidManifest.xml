@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.moviestudyapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CadastroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditarPerfil"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityPesquisar"
+            android:exported="true" />
+        <activity
+            android:name=".PerfilAmigo"
+            android:exported="true" />
+        <activity
+            android:name=".FilmeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListarFilmes"
+            android:exported="true" />
+        <activity
+            android:name=".ListarAmigosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListarFavoritosActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListaDoAmigoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".helper.VerificarAmigoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".helper.NaoAmigosActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true" />
+
+
+        <!-- <service
+            android:name=".helper.MyMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> -->
+
+        <service
+            android:name=".helper.RecebeNotificacao"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

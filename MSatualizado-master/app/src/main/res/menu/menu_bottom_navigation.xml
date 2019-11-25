@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="Principal" />
+
+    <item android:id="@+id/ic_pesquisa"
+        android:icon="@drawable/ic_search"
+        android:title="Pesquisa" />
+
+    <item android:id="@+id/ic_favoritos"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favoritos" />
+
+    <item android:id="@+id/ic_perfil"
+        android:icon="@drawable/ic_person"
+        android:title="Perfil" />
+
+
+
+
+</menu>

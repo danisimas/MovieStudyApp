@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo">
+
+    <LinearLayout
+        android:id="@+id/layoutX"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_filme_seja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Você ainda não segue ninguém :("
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/img_filmeFavoritoSeja"
+            android:layout_width="146dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_assistir"
+            android:text="Seguir"
+            android:textColor="#000000"></Button>
+        <TextView
+            android:id="@+id/txt_filme2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Clique neste botão no perfil de quem deseja seguir"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
